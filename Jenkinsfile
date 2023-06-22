@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn clean"
+               sh "/Users/rajin/Downloads/apache-maven-3.9.2/bin/mvn clean"
              }
          }
         stage('Build') {
             steps {
-               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn compile"
+               sh "/Users/rajin/Downloads/apache-maven-3.9.2/bin/mvn compile"
              } 
          } 
         stage('Test') {
             steps {
-               sh "/Users/srikanthgirimaiahgari/Downloads/apache-maven-3.8.1/bin/mvn  test -DskipTests=true"
+               sh "/Users/rajin/Downloads/apache-maven-3.9.2/bin/mvn  test -DskipTests=true"
              }
          }
      }
