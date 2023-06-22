@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-               sh "/Users/rajin/Downloads/apache-maven-3.9.2/bin/mvn clean"
+               sh "C:\Users\rajin\Downloads\apache-maven-3.9.2\bin\mvn clean"
              }
          }
         stage('Build') {
